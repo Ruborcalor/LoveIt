@@ -2,7 +2,6 @@
   .toc-title {
     font-size: $toc-title-font-size;
     font-weight: bold;
-    text-transform: uppercase;
   }
 
   .toc-content {
@@ -12,17 +11,6 @@
       text-indent: -0.85rem;
       padding-left: .8rem;
       list-style: none;
-
-      a:first-child::before {
-        content: "|";
-        font-weight: bolder;
-        margin-right: .5rem;
-        color: $single-link-color;
-
-        [theme=dark] & {
-          color: $single-link-color-dark;
-        }
-      }
 
       ul {
         padding-left: 1.5rem;
@@ -60,7 +48,7 @@
   visibility: hidden;
 
   [header-desktop=normal] & {
-    top: 5rem;
+    top: 8rem;
   }
 
   @include blur;
@@ -83,9 +71,9 @@
     }
 
     ul {
-      ul {
-        display: none;
-      }
+/*      ul {*/
+        //display: none;
+/*      }*/
 
       .has-active > ul {
         display: block;
